@@ -1,14 +1,29 @@
 package com.curso.springecommerce.model;
 
+
+import jakarta.persistence.*;
+
+import java.util.List;
+
+@Entity
+@Table(name= "user")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String username;
-    private String emil;
+    private String email;
     private String adress;
     private String telephone;
     private String tipo;
     private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<Product> products;
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders;
 
     public User() {
 
@@ -38,12 +53,12 @@ public class User {
         this.username = username;
     }
 
-    public String getEmil() {
-        return emil;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmil(String emil) {
-        this.emil = emil;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getAdress() {
@@ -78,13 +93,29 @@ public class User {
         this.password = password;
     }
 
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
+    public List<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
+    }
+
     @Override
     public String toString() {
         return "Usuario{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", username='" + username + '\'' +
-                ", emil='" + emil + '\'' +
+                ", emil='" + email + '\'' +
                 ", adress='" + adress + '\'' +
                 ", telephone='" + telephone + '\'' +
                 ", tipo='" + tipo + '\'' +

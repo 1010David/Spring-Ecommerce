@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bd5f9b4-51bd-4ef4-a72c-c660c9cc4538" name="Changes" comment="primer commit" />
+    <list default="true" id="7bd5f9b4-51bd-4ef4-a72c-c660c9cc4538" name="Changes" comment="primer commit">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/heroic-features.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/administrador/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/SpringEcommerceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/SpringEcommerceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +51,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -27,6 +65,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -35,14 +76,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/leamd/Documents/David/Projects/spring-ecommerce&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.SpringEcommerceApplication.executor": "Run",
+    "Application.Unnamed.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/leamd/Documents/David/Projects/spring-ecommerce/src/main/resources/templates/administrador",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leamd\Documents\David\Projects\spring-ecommerce\src\main\resources\templates\administrador" />
+      <recent name="C:\Users\leamd\Documents\David\Projects\spring-ecommerce\src\main\resources\static" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.curso.springecommerce" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringEcommerceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.curso.springecommerce.SpringEcommerceApplication" />
+      <module name="spring-ecommerce" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
