@@ -11,7 +11,7 @@ public class Product {
     private Integer id;
     private String name;
     private String decription;
-    private String imagen;
+    private String image;
     private double price;
     private int amount;
 
@@ -25,7 +25,7 @@ public class Product {
         this.user = user;
         this.amount = amount;
         this.price = price;
-        this.imagen = imagen;
+        this.image = imagen;
         this.decription = decription;
         this.name = name;
         this.id = id;
@@ -47,12 +47,12 @@ public class Product {
         this.price = price;
     }
 
-    public String getImagen() {
-        return imagen;
+    public String getImage() {
+        return image;
     }
 
-    public void setImagen(String imagen) {
-        this.imagen = imagen;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getDecription() {
@@ -94,7 +94,7 @@ public class Product {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", decription='" + decription + '\'' +
-                ", imagen='" + imagen + '\'' +
+                ", imagen='" + image + '\'' +
                 ", price=" + price +
                 ", amount=" + amount +
                 '}';
