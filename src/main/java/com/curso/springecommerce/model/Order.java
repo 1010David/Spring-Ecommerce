@@ -12,7 +12,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String number;
-    private Date crationDate;
+    private Date creationDate;
     private Date receiptDate;
     private double total;
 
@@ -25,10 +25,10 @@ public class Order {
     public Order() {
     }
 
-    public Order(double total, Date receiptDate, Date crationDate, String number, Integer id) {
+    public Order(double total, Date receiptDate, Date creationDate, String number, Integer id) {
         this.total = total;
         this.receiptDate = receiptDate;
-        this.crationDate = crationDate;
+        this.creationDate = creationDate;
         this.number = number;
         this.id = id;
     }
@@ -49,12 +49,12 @@ public class Order {
         this.number = number;
     }
 
-    public Date getCrationDate() {
-        return crationDate;
+    public Date getCreationDate() {
+        return creationDate;
     }
 
-    public void setCrationDate(Date crationDate) {
-        this.crationDate = crationDate;
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
     }
 
     public Date getReceiptDate() {
@@ -94,7 +94,7 @@ public class Order {
         return "Order{" +
                 "id=" + id +
                 ", number='" + number + '\'' +
-                ", crationDate=" + crationDate +
+                ", creationDate=" + creationDate +
                 ", receiptDate=" + receiptDate +
                 ", total=" + total +
                 '}';

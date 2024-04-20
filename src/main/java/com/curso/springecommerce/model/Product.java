@@ -10,7 +10,7 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String decription;
+    private String description;
     private String image;
     private double price;
     private int amount;
@@ -21,54 +21,14 @@ public class Product {
     public Product() {
     }
 
-    public Product(User user, int amount, double price, String imagen, String decription, String name, Integer id) {
-        this.user = user;
-        this.amount = amount;
-        this.price = price;
-        this.image = imagen;
-        this.decription = decription;
-        this.name = name;
+    public Product(Integer id, String name, String description, String image, double price, int amount, User user) {
         this.id = id;
-    }
-
-    public int getAmount() {
-        return amount;
-    }
-
-    public void setAmount(int amount) {
-        this.amount = amount;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public String getDecription() {
-        return decription;
-    }
-
-    public void setDecription(String decription) {
-        this.decription = decription;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
+        this.description = description;
+        this.image = image;
+        this.price = price;
+        this.amount = amount;
+        this.user = user;
     }
 
     public Integer getId() {
@@ -79,6 +39,46 @@ public class Product {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
     public User getUser() {
         return user;
     }
@@ -87,14 +87,13 @@ public class Product {
         this.user = user;
     }
 
-
     @Override
     public String toString() {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", decription='" + decription + '\'' +
-                ", imagen='" + image + '\'' +
+                ", description='" + description + '\'' +
+                ", image='" + image + '\'' +
                 ", price=" + price +
                 ", amount=" + amount +
                 '}';

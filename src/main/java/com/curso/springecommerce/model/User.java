@@ -7,6 +7,7 @@ import java.util.List;
 
 @Entity
 @Table(name= "user")
+
 public class User {
 
     @Id
@@ -15,9 +16,9 @@ public class User {
     private String name;
     private String username;
     private String email;
-    private String adress;
+    private String address;
     private String telephone;
-    private String tipo;
+    private String type;
     private String password;
 
     @OneToMany(mappedBy = "user")
@@ -25,9 +26,10 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Order> orders;
 
-    public User() {
+    public User(int id, String name, String username, String email, String address, String telephone, String type, String password) {
 
     }
+
 
     public Integer getId() {
         return id;
@@ -61,12 +63,12 @@ public class User {
         this.email = email;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getTelephone() {
@@ -77,12 +79,12 @@ public class User {
         this.telephone = telephone;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getType() {
+        return type;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getPassword() {
@@ -111,14 +113,14 @@ public class User {
 
     @Override
     public String toString() {
-        return "Usuario{" +
+        return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", username='" + username + '\'' +
                 ", emil='" + email + '\'' +
-                ", adress='" + adress + '\'' +
+                ", address='" + address + '\'' +
                 ", telephone='" + telephone + '\'' +
-                ", tipo='" + tipo + '\'' +
+                ", type='" + type + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
