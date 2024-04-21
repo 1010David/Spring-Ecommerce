@@ -8,15 +8,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrator/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrator/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrator/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrator/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -78,7 +83,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/leamd/Documents/David/Projects/spring-ecommerce/src/main/resources/templates/products&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
 }</component>
   <component name="RecentsManager">

@@ -21,15 +21,29 @@ public class User {
     private String type;
     private String password;
 
+    public User() {
+
+    }
+
     @OneToMany(mappedBy = "user")
     private List<Product> products;
     @OneToMany(mappedBy = "user")
     private List<Order> orders;
 
-    public User(int id, String name, String username, String email, String address, String telephone, String type, String password) {
 
+
+    public User(Integer id, String name, String username, String email, String address, String telephone, String type, String password, List<Product> products, List<Order> orders) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.email = email;
+        this.address = address;
+        this.telephone = telephone;
+        this.type = type;
+        this.password = password;
+        this.products = products;
+        this.orders = orders;
     }
-
 
     public Integer getId() {
         return id;

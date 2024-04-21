@@ -6,6 +6,7 @@ import com.curso.springecommerce.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,13 +32,17 @@ public class ProductController {
     public String create(){
         return "products/create";
     }
-
     @PostMapping("/save")
     public String save(Product product) {
-        LOGGER.info("This is the product object {}",product);
-        User u= new User(1, "", "", "", "", "", "", "");
-        product.setUser(u);
+        LOGGER.info("The message this is {}",product);
+
+        // Crear manualmente un objeto User con ID 1
+        User user = new User();
+        user.setId(1);
+
+        product.setUser(user);
         productService.save(product);
+
         return "redirect:/product-s";
     }
 

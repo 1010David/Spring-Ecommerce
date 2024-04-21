@@ -6,8 +6,8 @@ import com.curso.springecommerce.model.Product;
 import java.util.Optional;
 
 public interface ProductService {
-    public Product save(Product product);
-    public Optional<Product> get(Integer id);
-    public void update(Product product);
-    public void delete(Integer id);
+    Product save(Product product);
+    Optional<Product> get(Integer id);
+    void update(Product product);
+    void delete(Integer id);
 }
