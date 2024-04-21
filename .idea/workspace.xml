@@ -8,19 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administrator/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administrator/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/administrator/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/administrator/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/products/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

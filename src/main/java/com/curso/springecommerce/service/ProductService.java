@@ -3,6 +3,7 @@ package com.curso.springecommerce.service;
 
 import com.curso.springecommerce.model.Product;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface ProductService {
@@ -10,4 +11,5 @@ public interface ProductService {
     Optional<Product> get(Integer id);
     void update(Product product);
     void delete(Integer id);
+    public List<Product> findAll();
 }

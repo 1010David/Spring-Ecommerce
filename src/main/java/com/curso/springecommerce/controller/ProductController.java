@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,11 +23,15 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+
+
     @GetMapping("")
-    public String show() {
+    public String show(Model model) {
+        model.addAttribute("productos", productService.findAll());
         return "products/show";
 
     }
+
 
     @GetMapping("/create")
     public String create(){
