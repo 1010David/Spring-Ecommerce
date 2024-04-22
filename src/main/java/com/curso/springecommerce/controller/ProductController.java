@@ -53,17 +53,7 @@ public class ProductController {
         //image
         if (product.getId()==null) {                     // When a product is created
             String imageName = upload.saveImage(file);
-            product.setImage(imageName);
-        }else{
-            if (file.isEmpty()){
-                Product p= new Product();
-                p=productService.get(product.getId()).get();  //When we edit a product but we don't change image
-                product.setImage(p.getImage());
-            }else{
-                String imageName = upload.saveImage(file);
-                product.setImage(imageName);
-            }
-
+            product.getImage(imageName);
         }
 
         productService.save(product);
@@ -83,15 +73,44 @@ public class ProductController {
     }
 
     @PostMapping("/update")
-    public String update(Product product) {
+    public String update(Product product, @RequestParam("image") MultipartFile file) throws IOException {
+
+        if (file.isEmpty()){
+            Product p= new Product();
+            p=productService.get(product.getId()).get();  //When we edit a product & we don't change image
+            product.setImage(p.getImage());
+        }else {                           // When we edit the image
+
+            Product p = new Product();
+            p=productService.get(product.getId()).get();
+
+            if (!p.getImage().equals("default.jpg")){   // For delete when don't be defect image
+                upload.deleteImage(p.getImage());
+            }
+
+
+            String nameImage= upload.saveImage(file);
+            product.setImage(nameImage);
+
+        }                                            // For delete when don't be defect image
+
         productService.update(product);
         return "redirect:/product-s";
     }
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable Integer id){
+
+        Product p = new Product();
+        p=productService.get(id).get();
+
+        if (!p.getImage().equals("default.jpg")){   // For delete when don't be defect image
+            upload.deleteImage(p.getImage());
+        }
+
         productService.delete(id);
         return "redirect:/product-s";
     }
+
 
 }

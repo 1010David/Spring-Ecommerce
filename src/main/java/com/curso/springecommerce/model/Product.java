@@ -1,9 +1,6 @@
 package com.curso.springecommerce.model;
 
 import jakarta.persistence.*;
-import org.springframework.web.multipart.MultipartFile;
-
-import java.util.Arrays;
 
 @Entity
 @Table(name="products")
@@ -14,8 +11,8 @@ public class Product {
     private Integer id;
     private String name;
     private String description;
-    @Transient // Esto evita que JPA intente persistir este campo
-    private MultipartFile image;    private double price;
+    private String image;
+    private double price;
     private int amount;
 
     @ManyToOne
@@ -24,7 +21,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(Integer id, String name, String description, MultipartFile image, double price, int amount, User user) {
+    public Product(Integer id, String name, String description, String image, double price, int amount, User user) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -96,9 +93,10 @@ public class Product {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", image='" + Arrays.toString(new MultipartFile[]{image}) + '\'' +
+                ", image='" + image + '\'' +
                 ", price=" + price +
                 ", amount=" + amount +
+                ", user=" + user +
                 '}';
     }
 }
