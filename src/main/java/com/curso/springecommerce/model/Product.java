@@ -58,11 +58,11 @@ public class Product {
         this.description = description;
     }
 
-    public MultipartFile  getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(MultipartFile  image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
