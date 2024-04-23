@@ -6,11 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7bd5f9b4-51bd-4ef4-a72c-c660c9cc4538" name="Changes" comment="primer commit">
       <change afterPath="$PROJECT_DIR$/images/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springframework/web/multipart/MultipartFileImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/monitor.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/UploadFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/curso/springecommerce/service/UploadFileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/service/UploadFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/curso/springecommerce/service/UploadFileService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +82,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.springframework.web.multipart" />
       <recent name="com.curso.springecommerce.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -94,6 +98,11 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.curso.springecommerce" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="//When we edit a product &amp; we don't change image" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="SpringEcommerceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
