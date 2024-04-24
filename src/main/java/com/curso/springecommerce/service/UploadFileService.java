@@ -1,7 +1,7 @@
 package com.curso.springecommerce.service;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFileImpl;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,13 +12,14 @@ import java.nio.file.Paths;
 @Service
 public class UploadFileService {
 
-    public String saveImage(MultipartFileImpl file) throws IOException {
-        if (file.isEmpty()){
-            byte [] bytes=file.getBytes();
-            String folder = "images//";
-            Path path = Paths.get(folder + file);
+    private String folder = "images//";
+
+    public String saveImage(MultipartFile file) throws IOException {
+        if (!file.isEmpty()){
+            byte [] bytes = file.getBytes();
+            Path path = Paths.get(folder + file.getOriginalFilename());
             Files.write(path, bytes);
-            return file.toString();
+            return file.getOriginalFilename();
         }
         return "default.jpg";
     }

@@ -2,6 +2,8 @@ package com.curso.springecommerce.model;
 
 import jakarta.persistence.*;
 
+import java.util.Arrays;
+
 @Entity
 @Table(name="products")
 public class Product {
@@ -99,4 +101,6 @@ public class Product {
                 ", user=" + user +
                 '}';
     }
+
+
 }

@@ -4,17 +4,16 @@ import com.curso.springecommerce.model.Product;
 import com.curso.springecommerce.model.User;
 import com.curso.springecommerce.service.ProductService;
 import com.curso.springecommerce.service.UploadFileService;
-import jakarta.servlet.http.HttpSession;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.MultipartFileImpl;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Optional;
 
 @Controller
@@ -40,29 +39,40 @@ public class ProductController {
         return "products/create";
     }
 
+
+
+
     @PostMapping("/save")
-    public String save(Product product, @RequestParam("file") MultipartFile file) throws IOException {
+    public String save(Product product, @RequestParam("image") MultipartFile file) throws IOException {
         LOGGER.info("The message this is {}", product);
 
         // Crear manualmente un objeto User con ID 1
-        User user = new User();
-        user.setId(1);
-        product.setUser(user);
+        User u = new User();
+        u.setId(1);
+        product.setUser(u);
 
         //imagen
         if(product.getId() == null){
-            String nameIm= upload.saveImage((MultipartFileImpl) file);
-            product.setImage(nameIm);
+            // Obtener el contenido del archivo como un byte[]
+            byte[] imageData = file.getBytes();
+            // Asignar el byte[] al campo image de Product
+            product.setImage(Arrays.toString(imageData));
         }
         productService.save(product);
         return "redirect:/product-s";
     }
 
+
+
+
+
+
+
     @GetMapping("/edit/{id}")
     public String edit(@PathVariable Integer id, Model model) {
         Product product = new Product();
-        Optional<Product> optionProduct = productService.get(id);
-        product = optionProduct.get();
+        Optional<Product> optionalProduct = productService.get(id);
+        product = optionalProduct.get();
 
         LOGGER.info("Product searched:{}", product);
         model.addAttribute("product", product);
@@ -70,29 +80,34 @@ public class ProductController {
         return "products/edit";
     }
 
+
+
+
+
+
+
+
+
     @PostMapping("/update")
-    public String update(Product product, @RequestParam("image") MultipartFileImpl file) throws IOException {
+    public String update(Product product, @RequestParam("image") MultipartFile file) throws IOException {
+        Product p = productService.get(product.getId()).orElseThrow(() -> new IllegalArgumentException("Invalid product ID"));
 
-        Product p = new Product();
-        p = productService.get(product.getId()).get();
-
-        if (file.isEmpty()) {                    //When we edit a product & we don't change image
+        if (!p.getImage().equals("default.jpg")) {
+            upload.deleteImage(p.getImage());
+            // Guardar la nueva imagen
+            product.setImage(Arrays.toString(file.getBytes()));
+        } else {
+            // Conservar la imagen existente si no se proporciona un nuevo archivo
             product.setImage(p.getImage());
-
-        } else {                           // When we edit the image
-
-            if (!p.getImage().equals("default.jpg")) {   // For delete when don't be defect image
-                upload.deleteImage(p.getImage());
-            }
-
-            String nameImage = upload.saveImage(file);
-            product.setImage(nameImage);
-
-        }                                            // For delete when don't be defect image
+        }
 
         productService.update(product);
         return "redirect:/product-s";
     }
+
+
+
+
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable Integer id) {
@@ -100,9 +115,8 @@ public class ProductController {
         Product p = new Product();
         p=productService.get(id).get();
 
-        if(!p.getImage().equals("defaul.jpg")){
-            upload.deleteImage(p.getImage());
-        }
+        p.getImage();
+        upload.deleteImage(Arrays.toString(new String[]{p.getImage()}));
         productService.delete(id);
         return "redirect:/product-s";
     }
